@@ -13,6 +13,9 @@ const Login = (props) => {
 
   // UseEffect is used to handle side effects of user action
   // like in this case it is to handle every key stroke
+  //POINT TO NOTE: 1. if there is no parameter passed in UseEffect (like enteredEmail or enteredPassword)
+  //  then useEffect will run whenever the screen is rendered.
+  // 2. if empty parameter is passed in UseEffect and then UseEffect will run for the first time only  
   useEffect(() => {
     const identifier = setTimeout(() => {
       console.log('Check for time validity!')
